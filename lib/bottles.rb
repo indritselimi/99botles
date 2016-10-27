@@ -9,12 +9,12 @@ class Bottles
 	
 	def verse(n)
 		<<-VERSE
-#{number_of_bottles(n).capitalize} of beer on the wall, #{number_of_bottles(n)} of beer.
-#{what_to_do(n)}, #{number_of_bottles(n-1)} of beer on the wall.
+#{bottles(n).capitalize} of beer on the wall, #{bottles(n)} of beer.
+#{what_to_do(n)}, #{bottles(n-1)} of beer on the wall.
 VERSE
 	end
 
-	def number_of_bottles(n)
+	def bottles(n)
 		"#{number(n)} #{pluralize('bottle', n)}"
 	end
 
