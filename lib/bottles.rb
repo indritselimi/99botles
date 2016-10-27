@@ -26,6 +26,10 @@ VERSE
 		end
 	end
 
+	def bottles(n)
+		"#{number(n)} #{pluralize('bottle', n)}"
+	end
+
 	def number(n)
 		if n < 0
 			"99"
@@ -36,16 +40,6 @@ VERSE
 		end
 	end
 		
-	def bottles(n)
-		if n == 0
-			"no more bottles"
-		elsif n == 1
-			"#{n} #{pluralize('bottle', n)}"
-		else
-			"#{n} #{pluralize('bottle', n)}"
-		end	
-	end
-
 	def pluralize(name, n)
 		if n == 1
 			name 
