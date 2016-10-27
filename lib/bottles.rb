@@ -26,10 +26,6 @@ VERSE
 		end
 	end
 
-	def bottles(n)
-		"#{number(n)} #{pluralize('bottle', n)}"
-	end
-
 	def number(n)
 		if n < 0
 			"99"
